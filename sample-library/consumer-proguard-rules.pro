@@ -16,6 +16,7 @@
 #   public *;
 #}
 -keep class in.ponshere.sample_library.NonObfuscated
--keepclassmembers public class in.ponshere.sample_library.NonObfuscated {
-    *;
-}
+#For the consumer class it is ok to obfuscate the member of this class, but not the class.
+#-keepclassmembers public class in.ponshere.sample_library.NonObfuscated {
+#   *;
+#}
